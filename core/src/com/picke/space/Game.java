@@ -115,7 +115,7 @@ public class Game implements TransitionListener {
 	
 	public Array<Coin> coinArray = new Array<Coin>();
 	
-	Game(com.picke.space.Main m){
+	Game(Main m){
 		this.m = m;
 		this.a = m.a;
 		this.b = m.b;
