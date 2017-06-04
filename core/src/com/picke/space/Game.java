@@ -249,7 +249,7 @@ public class Game implements TransitionListener {
 			else if(settingsRect.contains(x, y)){
 				toggleMenu(SETTINGS);
 			}
-			else if(menuTween.getValue() == MENU_DST && closeMenuRect.contains(x, y) || y >=560){  // when pressing the close menu button
+			else if(menuTween.getValue() == MENU_DST && closeMenuRect.contains(x, y) || y >= 560 && x >= 161 || x < 161 && y >= 599){  //when clicking outside menu
 				toggleMenu(category);
 			}
 		}
