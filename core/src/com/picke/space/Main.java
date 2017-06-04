@@ -88,7 +88,7 @@ public class Main extends ApplicationAdapter {
 		isTouched = Gdx.input.isTouched();
 		
 		if(PRINT_COORDS && justTouched)
-			System.out.println("x: "+x+" y: "+y);
+			System.out.println("x: "+(int)x+" y: "+(int)y);
 		
 		tweenManager.update(delta);
 		inputDelay -= delta;
