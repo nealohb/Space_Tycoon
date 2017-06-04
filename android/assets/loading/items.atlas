@@ -1,0 +1,20 @@
+
+items.png
+size: 512,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+background
+  rotate: false
+  xy: 2, 27
+  size: 480, 800
+  orig: 480, 800
+  offset: 0, 0
+  index: -1
+bar
+  rotate: false
+  xy: 2, 2
+  size: 349, 23
+  orig: 349, 23
+  offset: 0, 0
+  index: -1
