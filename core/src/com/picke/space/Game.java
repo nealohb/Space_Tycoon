@@ -249,7 +249,7 @@ public class Game implements TransitionListener {
 			else if(settingsRect.contains(x, y)){
 				toggleMenu(SETTINGS);
 			}
-			else if(menuTween.getValue() == MENU_DST && closeMenuRect.contains(x, y)){
+			else if(menuTween.getValue() == MENU_DST && closeMenuRect.contains(x, y) || y >=560){  // when pressing the close menu button
 				toggleMenu(category);
 			}
 		}
@@ -467,6 +467,7 @@ public class Game implements TransitionListener {
 
 		boolean active = menuTween.getValue() > 0;
 		menuTweenActive = true;
+
 		Tween.to(menuTween, 0, .7f)
 		.target(active ? 0 : MENU_DST)
 		.ease(active ? TweenEquations.easeInOutQuint : TweenEquations.easeInOutQuint)
